@@ -1,19 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Slider</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>WarnerBros.com | Movies, TV Shows, Games & Apps, Anime, Collections & Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    <div class="slider">
-        <div class="slide-container">
-            <img src="OIP (1).jpg" class="slide active">
-            <img src="OIP (2).jpg" class="slide">
-            <img src="download.jpg" class="slide">
-        </div>
+
+  <nav>
+    <div class="menu-bar"> 
+      <header>
+        <img src="Warner bros.png" alt="Warner Bros Logo" class="logo">
+
+        <ul class="menus">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movie.html">Movies</a></li>
+          <li><a href="TV shows.html">TV Shows</a></li>
+          <li><a href="Anime.html">Anime</a></li>
+          <li><a href="Games and Apps.html">Games & Apps</a></li>
+          <li><a href="Collections.html">Collections</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul> 
+      </header>
     </div>
-    <script src="script.js"></script>
+  </nav>
+    <h1>Warner Bros Movies!</h1>
+    <p>Discover a variety of entertainment options & enjoy watching the best offerings across different media types.</p>
+
+  <div class="search-bar">
+    <form action="#" method="GET">
+      <input type="text" name="search" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <h1>Recently Added</h1>
+  <section1 class="recently added">
+
+    <div class="movie">
+      <img src="365 DNI.jpg" height="350" width="250" alt="365 DNI">
+      <h2>365 DNI</h2>
+      <p>Drama</p>
+    </div>
+    
+    <div class="movie">
+      <img src="Project Almanac (2014).jpg" height="350" width="250" alt="Project Almanac">
+      <h2>Project Almanac</h2>
+      <p>Sci-fi, Adventure</p>
+    </div>
+
+    <div class="movie">
+      <img src="Ghosted.jpg" height="350" width="250" alt="Ghosted">
+      <h2>Ghosted</h2>
+      <p>Action,Drama</p>
+    </div>
+    
+    <div class="movie">
+      <img src="Avatar.jpg" height="350" width="250" alt="Avatar">
+        <h2>Avatar</h2>
+        <p>Adventure,Scifi,Action</p>
+      </div>
+    
+    <div class="movie">
+      <img src="The Mummy.jpg" height="350" width="250" alt="The Mummy">
+        <h2>The Mummy</h2>
+        <p>Action,Adventure, Sci-fi</p>
+      </div>
+    
+    <div class="movie">
+      <img src="John Wick_ Chapter 4.jpg" height="350" width="250" alt="John Wick_ Chapter 4">
+        <h2>John Wick_ Chapter 4</h2>
+        <p>Thriller,Action</p>
+      </div>
+    
+  </div>
+</section1>
+
+<h1>Films & TV Shows</h1>
+<section1 class="tv-shows">
+    
+  <div class="tv-show">
+    <img src="Saltburn 2023.jpg" height="350" width="250" alt="Saltburn ">
+    <h2>Saltburn </h2>
+  </div>
+  
+  <div class="tv-show">
+    <img src="Book IV force.jpg" height="350" width="250" alt="Power Book:IV Force">
+    <h2>Power Book:IV Force</h2>
+  </div>
+  
+  <div class="tv-show">
+    <img src="Bel-air.jpg" height="350" width="250" alt="Bel-air">
+    <h2>Bel-air</h2>
+  </div>
+
+  <div class="tv-show">
+    <img src="Tell me a story.jpg" height="350" width="250" alt="Tell me a story">
+    <h2>Tell me a story</h2>
+  </div>
+   
+  <div class="tv-show">
+    <img src="Hacker.jpg " height="350" width="250" alt="Hacker">
+    <h2>Hacker</h2>
+  </div>
+  
+  <div class="tv-show">
+    <img src="Upgraded.jpg" height="350" width="250" alt="Upgraded">
+    <h2>Upgraded</h2>
+  </div>
+  </section1>
+
+    <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script src="script.js"></script>
+  <!-- Feedback Form -->
+  <h1>Feedback Form</h1>
+  <form action="submit_feedback.php" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="feedbackType">Feedback Type:</label><br>
+    <select id="feedbackType" name="feedbackType" required>
+      <option value="general">General Feedback</option>
+      <option value="complaint">Complaint</option>
+      <option value="suggestion">Suggestion</option>
+    </select><br><br>
+    
+    <label for="rating">Rating:</label><br>
+    <input type="radio" id="rating1" name="rating" value="1" required>
+    <label for="rating1">1</label>
+    <input type="radio" id="rating2" name="rating" value="2">
+    <label for="rating2">2</label>
+    <input type="radio" id="rating3" name="rating" value="3">
+    <label for="rating3">3</label>
+    <input type="radio" id="rating4" name="rating" value="4">
+    <label for="rating4">4</label>
+    <input type="radio" id="rating5" name="rating" value="5">
+    <label for="rating5">5</label><br><br>
+    
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
 </html>
